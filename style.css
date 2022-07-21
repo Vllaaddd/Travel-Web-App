@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 html{
     box-sizing: border-box;
 }
@@ -8,9 +10,538 @@ html{
     box-sizing: inherit;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 :root{
     --orange: #EE685F;
     --blue: #3D97B4;
     --black: #1A1A1A;
     --white: #FFFFFF;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    padding-right: 55px;
+    padding-left: 55px;
+}
+
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 26px 0;
+}
+
+#header ul h2{
+    color: var(--orange);
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+#header ul:nth-child(1) li a{
+    text-decoration: none;
+    color: var(--black);
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#header ul:nth-child(1) li a:hover,
+#header ul:nth-child(1) li a:focus{
+    color: var(--blue);
+}
+
+#header ul:nth-child(2) li:nth-child(1) a{
+    text-decoration: none;
+    color: var(--orange);
+    border-bottom: 2px dotted var(--orange);
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#header ul:nth-child(2) li:nth-child(2) a{
+    text-decoration: none;
+    color: var(--orange);
+    border-bottom: 2px dotted var(--orange);
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#header ul:nth-child(2) li:not(:last-child) a:hover{
+    color: var(--blue);
+    border-bottom: 2px dotted var(--blue);
+}
+
+#header ul li:not(:last-child){
+    margin-right: 30px;
+}
+
+#hero{
+    width: 100%;
+    height: 500px;
+    background-image: url(./img/jpg/hero-img.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+    padding-left: 125px;
+    margin-bottom: 140px;
+}
+
+#hero h2{
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 20px;
+}
+
+#hero p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#why{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #F7F7F7;
+}
+
+#why h2{
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 26px;
+}
+
+#why p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+#why ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#why ul li:not(:last-child){
+    margin-right: 30px;
+}
+
+#why ul li h3{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#why ul li p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+
+#why ul li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#offers{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#offers h2{
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 60px;
+}
+
+#offers ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#offers li:not(:last-child){
+    margin-right: 30px;
+}
+
+#offers img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#offers ul li h3{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+#offers ul li p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+#offers ul li button,
+#reviews button{
+    width: 275px;
+    height: 50px;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    background: var(--white);
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+    background: var(--orange);
+    cursor: pointer;
+}
+
+#offers ul li button:hover,
+#reviews button:hover{
+    background: var(--white);
+    color: var(--orange);
+}
+
+#offers ul li button:not(:last-child){
+    margin-right: 20px;
+    width: 275px;
+    height: 50px;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+    background: var(--white);
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--orange);
+}
+
+#offers ul li button:not(:last-child):hover{
+    background: var(--orange);
+    color: var(--white);
+}
+
+#offers ul li ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-thumb{
+    position: relative;
+}
+
+.img-thumb div{
+    position: absolute;
+    left: 15px;
+    bottom: 44px;
+    width: 540px;
+    height: 70px;
+    padding: 15px 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.img-thumb div ul li{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-thumb div ul li hr{
+    position: absolute;
+    top: 20px;
+    left: -35px;
+    width: 40px;
+    color: #999999;
+    transform: rotate(90deg);
+    border: 0.5px solid #999999;
+}
+
+.name{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 4px;
+}
+
+.value{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#reviews{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#reviews h2{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#reviews ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#reviews ul li:not(:last-child){
+    margin-right: 30px;
+}
+
+#reviews ul li{
+    margin-bottom: 50px;
+}
+
+#reviews ul li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reviews ul li div img{
+    margin-bottom: 20px;
+}
+
+#reviews ul li p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+#reviews ul li span{
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#recent{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#recent img{
+    width: 370px;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+#recent h2{
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#recent ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#recent ul li:not(:last-child){
+   margin-right: 30px;
+}
+
+#recent ul ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#recent ul ul p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+#recent ul ul span{
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--blue);
+}
+
+#recent ul li h3{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+#recent ul li p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#second{
+    margin-bottom: 22px;
+}
+
+#recent ul ul img{
+    width: 22px;
+    height: 22px;
+    margin-bottom: 0;
+    margin-right: 7px;
+}
+
+#footer{
+    padding-top: 60px;
+    width: 100%;
+    height: 320px;
+    background-color: #F3F2F0;
+}
+
+#footer ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 157px;
+    text-align: left;
+    align-items: stretch;
+    width: 121px;
+    height: 131px;
+}
+
+#footer ol{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+#footer ol ul p,
+#footer ol div p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#footer li{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#footer ol ul li:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.input{
+    width: 336px;
+    height: 40px;
+    border: 1px solid var(--orange);
+    border-radius: 10px;
+}
+
+#footer ol div span{
+    margin-bottom: 7px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#footer ol div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 10px;
+}
+
+#footer hr{
+    width: 100%;
+    color: #999999;
+    margin-bottom: 20px;
 }
