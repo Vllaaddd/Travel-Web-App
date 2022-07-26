@@ -545,3 +545,24 @@ ul{
     color: #999999;
     margin-bottom: 20px;
 }
+
+@media (max-width: 375px) {
+    #hero {
+        background-image: url(./img/jpg/hero-img.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: 32px;
+        padding-left: 16px;
+        margin-bottom: 64px;
+    }
+
+    #why ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
