@@ -575,6 +575,10 @@ ul{
         flex-direction: column;
     }
 
+    #offers li:not(:last-child){
+        margin-right: 0;
+    }
+
     #offers ul li ul{
         flex-direction: column;
     }
@@ -645,6 +649,10 @@ ul{
 
     #offers ul{
         flex-direction: row;
+    }
+
+    #offers li:not(:last-child){
+        margin-right: 30px;
     }
 
     #offers ul li ul{
